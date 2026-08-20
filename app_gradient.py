@@ -140,10 +140,7 @@ def figura_convergencia(historial):
 # =========================================================
 with st.sidebar:
     st.header("⚙️ Parámetros")
-    st.caption(
-    f"Mínimo detectado automáticamente en ({MINIMO[0]:.2f}, {MINIMO[1]:.2f}) | "
-    "Gradiente aplicado: ∇f(x,y) = (2(x−3), 2(y+2))"
-)
+    st.caption(f"Mínimo detectado automáticamente en ({MINIMO[0]:.2f}, {MINIMO[1]:.2f})")
 
     eta = st.slider(
         "Tasa de aprendizaje (η)",
